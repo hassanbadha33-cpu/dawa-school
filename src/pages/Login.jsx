@@ -111,11 +111,12 @@ export default function Login() {
                     </label>
                     <div className="mt-1">
                       <input
-                        type="email"
+                        type="password"
+                        autoComplete="username"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
-                        placeholder="staff.name@dawa-academy.edu"
+                        className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white tracking-widest font-mono"
+                        placeholder="••••••••••••••"
                       />
                     </div>
                   </div>
