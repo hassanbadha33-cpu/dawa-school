@@ -1,0 +1,584 @@
+{
+  "students": [
+    {
+      "id": 2000,
+      "name": "James Smith",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "james.smith@example.com",
+      "phone": "+1 (555) 100-2000",
+      "status": "Active"
+    },
+    {
+      "id": 2001,
+      "name": "Maria Martinez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "maria.martinez@example.com",
+      "phone": "+1 (555) 101-2001",
+      "status": "Active"
+    },
+    {
+      "id": 2002,
+      "name": "David Davis",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "david.davis@example.com",
+      "phone": "+1 (555) 102-2002",
+      "status": "Active"
+    },
+    {
+      "id": 2003,
+      "name": "Emma Moore",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "emma.moore@example.com",
+      "phone": "+1 (555) 103-2003",
+      "status": "Inactive"
+    },
+    {
+      "id": 2004,
+      "name": "Michael Thomas",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "michael.thomas@example.com",
+      "phone": "+1 (555) 104-2004",
+      "status": "Active"
+    },
+    {
+      "id": 2005,
+      "name": "Olivia Harris",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "olivia.harris@example.com",
+      "phone": "+1 (555) 105-2005",
+      "status": "Active"
+    },
+    {
+      "id": 2006,
+      "name": "Robert Robinson",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "robert.robinson@example.com",
+      "phone": "+1 (555) 106-2006",
+      "status": "Active"
+    },
+    {
+      "id": 2007,
+      "name": "John Lewis",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "john.lewis@example.com",
+      "phone": "+1 (555) 107-2007",
+      "status": "Active"
+    },
+    {
+      "id": 2008,
+      "name": "Ava Hall",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "ava.hall@example.com",
+      "phone": "+1 (555) 108-2008",
+      "status": "Inactive"
+    },
+    {
+      "id": 2009,
+      "name": "William Hernandez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "william.hernandez@example.com",
+      "phone": "+1 (555) 109-2009",
+      "status": "Active"
+    },
+    {
+      "id": 2010,
+      "name": "Sophia Lopez",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "sophia.lopez@example.com",
+      "phone": "+1 (555) 110-2010",
+      "status": "Active"
+    },
+    {
+      "id": 2011,
+      "name": "Richard Green",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "richard.green@example.com",
+      "phone": "+1 (555) 111-2011",
+      "status": "Active"
+    },
+    {
+      "id": 2012,
+      "name": "Isabella Smith",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "isabella.smith@example.com",
+      "phone": "+1 (555) 112-2012",
+      "status": "Active"
+    },
+    {
+      "id": 2013,
+      "name": "Charles Martinez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "charles.martinez@example.com",
+      "phone": "+1 (555) 113-2013",
+      "status": "Active"
+    },
+    {
+      "id": 2014,
+      "name": "Mia Davis",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "mia.davis@example.com",
+      "phone": "+1 (555) 114-2014",
+      "status": "Active"
+    },
+    {
+      "id": 2015,
+      "name": "Joseph Moore",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "joseph.moore@example.com",
+      "phone": "+1 (555) 115-2015",
+      "status": "Active"
+    },
+    {
+      "id": 2016,
+      "name": "Charlotte Thomas",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "charlotte.thomas@example.com",
+      "phone": "+1 (555) 116-2016",
+      "status": "Inactive"
+    },
+    {
+      "id": 2017,
+      "name": "Thomas Harris",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "thomas.harris@example.com",
+      "phone": "+1 (555) 117-2017",
+      "status": "Active"
+    },
+    {
+      "id": 2018,
+      "name": "Amelia Robinson",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "amelia.robinson@example.com",
+      "phone": "+1 (555) 118-2018",
+      "status": "Active"
+    },
+    {
+      "id": 2019,
+      "name": "Christopher Lewis",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "christopher.lewis@example.com",
+      "phone": "+1 (555) 119-2019",
+      "status": "Active"
+    },
+    {
+      "id": 2020,
+      "name": "Harper Hall",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "harper.hall@example.com",
+      "phone": "+1 (555) 120-2020",
+      "status": "Active"
+    },
+    {
+      "id": 2021,
+      "name": "Daniel Hernandez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "daniel.hernandez@example.com",
+      "phone": "+1 (555) 121-2021",
+      "status": "Active"
+    },
+    {
+      "id": 2022,
+      "name": "Evelyn Lopez",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "evelyn.lopez@example.com",
+      "phone": "+1 (555) 122-2022",
+      "status": "Active"
+    },
+    {
+      "id": 2023,
+      "name": "Paul Green",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "paul.green@example.com",
+      "phone": "+1 (555) 123-2023",
+      "status": "Inactive"
+    },
+    {
+      "id": 2024,
+      "name": "Abigail Smith",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "abigail.smith@example.com",
+      "phone": "+1 (555) 124-2024",
+      "status": "Inactive"
+    },
+    {
+      "id": 2025,
+      "name": "Mark Martinez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "mark.martinez@example.com",
+      "phone": "+1 (555) 125-2025",
+      "status": "Active"
+    },
+    {
+      "id": 2026,
+      "name": "Emily Davis",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "emily.davis@example.com",
+      "phone": "+1 (555) 126-2026",
+      "status": "Active"
+    },
+    {
+      "id": 2027,
+      "name": "Donald Moore",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "donald.moore@example.com",
+      "phone": "+1 (555) 127-2027",
+      "status": "Active"
+    },
+    {
+      "id": 2028,
+      "name": "Elizabeth Thomas",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "elizabeth.thomas@example.com",
+      "phone": "+1 (555) 128-2028",
+      "status": "Active"
+    },
+    {
+      "id": 2029,
+      "name": "George Harris",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "george.harris@example.com",
+      "phone": "+1 (555) 129-2029",
+      "status": "Active"
+    },
+    {
+      "id": 2030,
+      "name": "Sofia Robinson",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "sofia.robinson@example.com",
+      "phone": "+1 (555) 130-2030",
+      "status": "Active"
+    },
+    {
+      "id": 2031,
+      "name": "Kenneth Lewis",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "kenneth.lewis@example.com",
+      "phone": "+1 (555) 131-2031",
+      "status": "Active"
+    },
+    {
+      "id": 2032,
+      "name": "Avery Hall",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "avery.hall@example.com",
+      "phone": "+1 (555) 132-2032",
+      "status": "Inactive"
+    },
+    {
+      "id": 2033,
+      "name": "Steven Hernandez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "steven.hernandez@example.com",
+      "phone": "+1 (555) 133-2033",
+      "status": "Active"
+    },
+    {
+      "id": 2034,
+      "name": "Layla Lopez",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "layla.lopez@example.com",
+      "phone": "+1 (555) 134-2034",
+      "status": "Active"
+    },
+    {
+      "id": 2035,
+      "name": "Matthew Green",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "matthew.green@example.com",
+      "phone": "+1 (555) 135-2035",
+      "status": "Active"
+    },
+    {
+      "id": 2036,
+      "name": "Chloe Smith",
+      "grade": "9th Grade",
+      "section": "A",
+      "email": "chloe.smith@example.com",
+      "phone": "+1 (555) 136-2036",
+      "status": "Active"
+    },
+    {
+      "id": 2037,
+      "name": "Anthony Martinez",
+      "grade": "10th Grade",
+      "section": "B",
+      "email": "anthony.martinez@example.com",
+      "phone": "+1 (555) 137-2037",
+      "status": "Active"
+    },
+    {
+      "id": 2038,
+      "name": "Ella Davis",
+      "grade": "11th Grade",
+      "section": "C",
+      "email": "ella.davis@example.com",
+      "phone": "+1 (555) 138-2038",
+      "status": "Active"
+    },
+    {
+      "id": 2039,
+      "name": "Joshua Moore",
+      "grade": "12th Grade",
+      "section": "D",
+      "email": "joshua.moore@example.com",
+      "phone": "+1 (555) 139-2039",
+      "status": "Active"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 5000,
+      "name": "Ahmed Mahmoud",
+      "role": "Head of Dept",
+      "subject": "Mathematics",
+      "qualification": "M.Ed. Mathematics",
+      "experience": "3 Years",
+      "email": "ahmed.mahmoud@dawa.edu",
+      "phone": "+1 (555) 300-5000",
+      "address": "Apt 1, Faculty Quarters",
+      "classes": 2
+    },
+    {
+      "id": 5001,
+      "name": "Fatima Jama",
+      "role": "Faculty",
+      "subject": "Science",
+      "qualification": "M.Ed. Science",
+      "experience": "4 Years",
+      "email": "fatima.jama@dawa.edu",
+      "phone": "+1 (555) 301-5001",
+      "address": "Apt 2, Faculty Quarters",
+      "classes": 3
+    },
+    {
+      "id": 5002,
+      "name": "Ibrahim Osman",
+      "role": "Faculty",
+      "subject": "History",
+      "qualification": "M.Ed. History",
+      "experience": "5 Years",
+      "email": "ibrahim.osman@dawa.edu",
+      "phone": "+1 (555) 302-5002",
+      "address": "Apt 3, Faculty Quarters",
+      "classes": 4
+    },
+    {
+      "id": 5003,
+      "name": "Amina Mohamed",
+      "role": "Faculty",
+      "subject": "Literature",
+      "qualification": "M.Ed. Literature",
+      "experience": "6 Years",
+      "email": "amina.mohamed@dawa.edu",
+      "phone": "+1 (555) 303-5003",
+      "address": "Apt 4, Faculty Quarters",
+      "classes": 2
+    },
+    {
+      "id": 5004,
+      "name": "Yusuf Farah",
+      "role": "Faculty",
+      "subject": "Physical Ed",
+      "qualification": "M.Ed. Physical Ed",
+      "experience": "7 Years",
+      "email": "yusuf.farah@dawa.edu",
+      "phone": "+1 (555) 304-5004",
+      "address": "Apt 5, Faculty Quarters",
+      "classes": 3
+    },
+    {
+      "id": 5005,
+      "name": "Khadija Ali",
+      "role": "Faculty",
+      "subject": "Geography",
+      "qualification": "M.Ed. Geography",
+      "experience": "8 Years",
+      "email": "khadija.ali@dawa.edu",
+      "phone": "+1 (555) 305-5005",
+      "address": "Apt 6, Faculty Quarters",
+      "classes": 4
+    },
+    {
+      "id": 5006,
+      "name": "Omar Hassan",
+      "role": "Faculty",
+      "subject": "Mathematics",
+      "qualification": "M.Ed. Mathematics",
+      "experience": "9 Years",
+      "email": "omar.hassan@dawa.edu",
+      "phone": "+1 (555) 306-5006",
+      "address": "Apt 7, Faculty Quarters",
+      "classes": 2
+    },
+    {
+      "id": 5007,
+      "name": "Zainab Siraad",
+      "role": "Faculty",
+      "subject": "Science",
+      "qualification": "M.Ed. Science",
+      "experience": "10 Years",
+      "email": "zainab.siraad@dawa.edu",
+      "phone": "+1 (555) 307-5007",
+      "address": "Apt 8, Faculty Quarters",
+      "classes": 3
+    },
+    {
+      "id": 5008,
+      "name": "Ali Hussein",
+      "role": "Faculty",
+      "subject": "History",
+      "qualification": "M.Ed. History",
+      "experience": "11 Years",
+      "email": "ali.hussein@dawa.edu",
+      "phone": "+1 (555) 308-5008",
+      "address": "Apt 9, Faculty Quarters",
+      "classes": 4
+    },
+    {
+      "id": 5009,
+      "name": "Hawa Abdi",
+      "role": "Faculty",
+      "subject": "Literature",
+      "qualification": "M.Ed. Literature",
+      "experience": "12 Years",
+      "email": "hawa.abdi@dawa.edu",
+      "phone": "+1 (555) 309-5009",
+      "address": "Apt 10, Faculty Quarters",
+      "classes": 2
+    },
+    {
+      "id": 5010,
+      "name": "Hassan Mahmoud",
+      "role": "Faculty",
+      "subject": "Physical Ed",
+      "qualification": "M.Ed. Physical Ed",
+      "experience": "3 Years",
+      "email": "hassan.mahmoud@dawa.edu",
+      "phone": "+1 (555) 310-5010",
+      "address": "Apt 11, Faculty Quarters",
+      "classes": 3
+    },
+    {
+      "id": 5011,
+      "name": "Aisha Jama",
+      "role": "Faculty",
+      "subject": "Geography",
+      "qualification": "M.Ed. Geography",
+      "experience": "4 Years",
+      "email": "aisha.jama@dawa.edu",
+      "phone": "+1 (555) 311-5011",
+      "address": "Apt 12, Faculty Quarters",
+      "classes": 4
+    },
+    {
+      "id": 5012,
+      "name": "Ahmed Osman",
+      "role": "Faculty",
+      "subject": "Mathematics",
+      "qualification": "M.Ed. Mathematics",
+      "experience": "5 Years",
+      "email": "ahmed.osman@dawa.edu",
+      "phone": "+1 (555) 312-5012",
+      "address": "Apt 13, Faculty Quarters",
+      "classes": 2
+    },
+    {
+      "id": 5013,
+      "name": "Fatima Mohamed",
+      "role": "Faculty",
+      "subject": "Science",
+      "qualification": "M.Ed. Science",
+      "experience": "6 Years",
+      "email": "fatima.mohamed@dawa.edu",
+      "phone": "+1 (555) 313-5013",
+      "address": "Apt 14, Faculty Quarters",
+      "classes": 3
+    },
+    {
+      "id": 5014,
+      "name": "Ibrahim Farah",
+      "role": "Faculty",
+      "subject": "History",
+      "qualification": "M.Ed. History",
+      "experience": "7 Years",
+      "email": "ibrahim.farah@dawa.edu",
+      "phone": "+1 (555) 314-5014",
+      "address": "Apt 15, Faculty Quarters",
+      "classes": 4
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "9th Grade Foundations",
+      "subject": "Core Sciences",
+      "teacher": "Sarah Jenkins",
+      "students": 145,
+      "room": "Block A, Floor 1",
+      "time": "08:00 AM - 02:00 PM"
+    },
+    {
+      "id": 2,
+      "name": "10th Grade Prep",
+      "subject": "Mathematics",
+      "teacher": "David Anderson",
+      "students": 120,
+      "room": "Block B, Lab 2",
+      "time": "09:00 AM - 03:00 PM"
+    },
+    {
+      "id": 3,
+      "name": "11th Grade Advanced",
+      "subject": "Information Technology",
+      "teacher": "Maria Garcia",
+      "students": 95,
+      "room": "Block C, IT Lab 1",
+      "time": "08:30 AM - 01:30 PM"
+    },
+    {
+      "id": 4,
+      "name": "12th Grade Senior Seminar",
+      "subject": "Humanities & Literature",
+      "teacher": "James Smith",
+      "students": 80,
+      "room": "Main Assembly Hall",
+      "time": "10:00 AM - 04:00 PM"
+    }
+  ]
+}
