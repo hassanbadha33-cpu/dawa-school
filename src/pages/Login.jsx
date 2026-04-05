@@ -175,9 +175,9 @@ export default function Login() {
       
       {/* Right side - Image/Graphic */}
       <div className="hidden lg:block relative w-0 flex-1 bg-slate-900 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-600/95 to-slate-900/95 mix-blend-multiply z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-brand-900/30 z-10" />
         <img
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover opacity-90"
           src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
           alt="Students learning together"
         />
