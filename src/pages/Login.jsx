@@ -1,14 +1,28 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { School, ArrowRight, ShieldCheck } from 'lucide-react';
+import { useToast } from '../context/ToastContext';
+import { School, ArrowRight, ShieldCheck, Mail } from 'lucide-react';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isForgotPassword, setIsForgotPassword] = useState(false);
   const { login } = useAuth();
+  const { showToast } = useToast();
   const navigate = useNavigate();
+
+  const handleResetPassword = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setError('Please enter your staff email address');
+      return;
+    }
+    showToast('Secure password reset link sent to ' + email, 'success');
+    setIsForgotPassword(false);
+    setError('');
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,14 +56,14 @@ export default function Login() {
           </div>
           
           <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
-            Welcome back
+            {isForgotPassword ? 'Reset password' : 'Welcome back'}
           </h2>
           <p className="mt-2 text-sm text-slate-500 font-medium">
-            Please sign in to your administrator account
+            {isForgotPassword ? 'Enter your staff email to receive a recovery link.' : 'Please sign in to your administrator account'}
           </p>
 
           <div className="mt-8">
-            <form className="space-y-6 bg-white p-8 rounded-2xl shadow-soft border border-slate-100" onSubmit={handleSubmit}>
+            <form className="space-y-6 bg-white p-8 rounded-2xl shadow-soft border border-slate-100 min-h-[380px]" onSubmit={isForgotPassword ? handleResetPassword : handleSubmit}>
               {error && (
                 <div className="bg-red-50/50 border border-red-200 text-red-600 p-4 rounded-xl text-sm flex items-start gap-3 backdrop-blur-sm animate-in fade-in slide-in-from-top-2">
                   <ShieldCheck className="w-5 h-5 flex-shrink-0 text-red-500" />
@@ -57,64 +71,100 @@ export default function Login() {
                 </div>
               )}
               
-              <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-slate-700">
-                  Email address
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
-                    placeholder="admin@gmail.com"
-                  />
-                </div>
-              </div>
+              {isForgotPassword ? (
+                <>
+                   <div className="space-y-1.5">
+                     <label className="block text-sm font-semibold text-slate-700">Email address</label>
+                     <div className="mt-1">
+                       <input
+                         type="email"
+                         value={email}
+                         onChange={(e) => setEmail(e.target.value)}
+                         className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
+                         placeholder="staff.name@dawa-academy.edu"
+                       />
+                     </div>
+                   </div>
 
-              <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-slate-700">
-                  Password
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
-                    placeholder="••••••••"
-                  />
-                </div>
-              </div>
+                   <div className="pt-2 flex flex-col gap-3 mt-8">
+                     <button
+                       type="submit"
+                       className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-xl shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 transition-all active:scale-[0.98] group"
+                     >
+                       <Mail className="mr-2 w-4 h-4 opacity-70 group-hover:opacity-100 transition-all" />
+                       Send Reset Link
+                     </button>
+                     <button
+                       type="button"
+                       onClick={() => { setIsForgotPassword(false); setError(''); }}
+                       className="w-full flex justify-center py-3 px-4 rounded-xl text-sm font-bold text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-all active:scale-[0.98]"
+                     >
+                       Back to login
+                     </button>
+                   </div>
+                </>
+              ) : (
+                <>
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-semibold text-slate-700">
+                      Email address
+                    </label>
+                    <div className="mt-1">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
+                        placeholder="staff.name@dawa-academy.edu"
+                      />
+                    </div>
+                  </div>
 
-              <div className="flex items-center justify-between pt-2">
-                <div className="flex items-center">
-                  <input
-                    id="remember-me"
-                    type="checkbox"
-                    className="h-4 w-4 text-brand-600 focus:ring-brand-500/50 border-slate-300 rounded transition-colors cursor-pointer"
-                  />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm font-medium text-slate-600 cursor-pointer">
-                    Remember me
-                  </label>
-                </div>
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-semibold text-slate-700">
+                      Password
+                    </label>
+                    <div className="mt-1">
+                      <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className="appearance-none block w-full px-4 py-3 border border-slate-200 rounded-xl shadow-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all sm:text-sm bg-slate-50/50 focus:bg-white"
+                        placeholder="••••••••"
+                      />
+                    </div>
+                  </div>
 
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-brand-600 hover:text-brand-700 transition-colors">
-                    Forgot details?
-                  </a>
-                </div>
-              </div>
+                  <div className="flex items-center justify-between pt-2">
+                    <div className="flex items-center">
+                      <input
+                        id="remember-me"
+                        type="checkbox"
+                        className="h-4 w-4 text-brand-600 focus:ring-brand-500/50 border-slate-300 rounded transition-colors cursor-pointer"
+                      />
+                      <label htmlFor="remember-me" className="ml-2 block text-sm font-medium text-slate-600 cursor-pointer">
+                        Remember me
+                      </label>
+                    </div>
 
-              <div className="pt-2">
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-all active:scale-[0.98] group"
-                >
-                  Sign into dashboard
-                  <ArrowRight className="ml-2 w-4 h-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                </button>
-              </div>
+                    <div className="text-sm">
+                      <button type="button" onClick={() => setIsForgotPassword(true)} className="font-semibold text-brand-600 hover:text-brand-700 transition-colors">
+                        Forgot details?
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="pt-2">
+                    <button
+                      type="submit"
+                      className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 transition-all active:scale-[0.98] group"
+                    >
+                      Sign into dashboard
+                      <ArrowRight className="ml-2 w-4 h-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                    </button>
+                  </div>
+                </>
+              )}
             </form>
             
 
