@@ -83,7 +83,7 @@ export default function Dashboard() {
       </div>
       
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((item) => {
           const Icon = item.icon;
           return (
@@ -110,8 +110,8 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Chart Area */}
-        <div className="lg:col-span-2 bg-white shadow-soft rounded-3xl border border-slate-100 p-6 sm:p-8 relative group hover:shadow-xl transition-shadow duration-300 flex flex-col w-full min-h-[400px]">
-          <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-8 gap-4">
+        <div className="lg:col-span-2 bg-white shadow-soft rounded-3xl border border-slate-100 p-5 sm:p-8 relative group hover:shadow-xl transition-shadow duration-300 flex flex-col w-full min-h-[400px] overflow-hidden">
+          <div className="flex flex-col sm:flex-row justify-between sm:items-center mb-6 sm:mb-8 gap-4">
             <div>
               <h2 className="text-xl font-extrabold text-slate-900 tracking-tight">Growth Analytics</h2>
               <p className="text-sm text-slate-500 font-medium mt-1">Monthly student registrations analyzed securely via Recharts</p>
@@ -183,8 +183,8 @@ export default function Dashboard() {
 
       <Modal isOpen={isLogModalOpen} onClose={() => setIsLogModalOpen(false)} title="System Activity & Deep Logs">
          <div className="space-y-4">
-            <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-              <table className="min-w-full divide-y divide-slate-100 table-fixed">
+            <div className="bg-white rounded-xl border border-slate-200 overflow-x-auto shadow-sm">
+              <table className="min-w-[700px] w-full divide-y divide-slate-100 table-fixed">
                 <thead className="bg-slate-50">
                   <tr>
                     <th className="px-5 py-3.5 text-left text-xs font-black text-slate-500 uppercase tracking-widest w-1/4">Timestamp</th>
