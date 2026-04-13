@@ -13,6 +13,7 @@ import Classes from './pages/Classes';
 import Attendance from './pages/Attendance';
 import Fees from './pages/Fees';
 import Reports from './pages/Reports';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
               </Route>
             </Route>
 
-            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </ToastProvider>
