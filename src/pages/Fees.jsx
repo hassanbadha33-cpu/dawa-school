@@ -119,7 +119,7 @@ export default function Fees() {
         </div>
 
         <div className="overflow-x-auto min-h-[400px] custom-scrollbar pb-2">
-          <table className="w-full min-w-[900px] divide-y divide-slate-100 table-fixed">
+          <table className="w-full min-w-[900px] divide-y divide-slate-100">
             <thead className="bg-slate-50/80">
               <tr>
                 <th scope="col" className="px-6 py-4 text-left text-xs font-black text-slate-400 uppercase tracking-widest">Student Details</th>

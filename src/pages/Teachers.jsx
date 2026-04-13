@@ -15,18 +15,18 @@ export default function Teachers() {
   useEffect(() => {
     setTimeout(() => {
       setTeachers([
-        { id: 'TCH001', name: 'Dr. Sarah Connor', subject: 'Science', email: 's.connor@example.com', phone: '555-0201', role: 'Head of Dept' },
-        { id: 'TCH002', name: 'Mr. David Smith', subject: 'Mathematics', email: 'd.smith@example.com', phone: '555-0202', role: 'Faculty' },
-        { id: 'TCH003', name: 'Ms. Emily Chen', subject: 'Literature', email: 'e.chen@example.com', phone: '555-0203', role: 'Faculty' },
-        { id: 'TCH004', name: 'Prof. Michael Johnson', subject: 'History', email: 'm.johnson@example.com', phone: '555-0204', role: 'Head of Dept' },
-        { id: 'TCH005', name: 'Mrs. Jessica Brown', subject: 'Computer Science', email: 'j.brown@example.com', phone: '555-0205', role: 'Faculty' },
-        { id: 'TCH006', name: 'Mr. Christopher Williams', subject: 'Physical Ed', email: 'c.williams@example.com', phone: '555-0206', role: 'Coach' },
-        { id: 'TCH007', name: 'Dr. Amanda Jones', subject: 'Science', email: 'a.jones@example.com', phone: '555-0207', role: 'Faculty' },
-        { id: 'TCH008', name: 'Mr. Robert Davis', subject: 'Mathematics', email: 'r.davis@example.com', phone: '555-0208', role: 'Faculty' },
-        { id: 'TCH009', name: 'Ms. Jennifer Miller', subject: 'Literature', email: 'j.miller@example.com', phone: '555-0209', role: 'Faculty' },
-        { id: 'TCH010', name: 'Mr. James Wilson', subject: 'History', email: 'j.wilson@example.com', phone: '555-0210', role: 'Faculty' },
-        { id: 'TCH011', name: 'Mrs. Linda Taylor', subject: 'Computer Science', email: 'l.taylor@example.com', phone: '555-0211', role: 'Faculty' },
-        { id: 'TCH012', name: 'Mr. Richard Anderson', subject: 'Physical Ed', email: 'r.anderson@example.com', phone: '555-0212', role: 'Coach' }
+        { id: 'TCH001', name: 'Dr. Sarah Connor', subject: 'Science', email: 's.connor@example.com', phone: '555-0201', role: 'Head of Dept', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH002', name: 'Mr. David Smith', subject: 'Mathematics', email: 'd.smith@example.com', phone: '555-0202', role: 'Faculty', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH003', name: 'Ms. Emily Chen', subject: 'Literature', email: 'e.chen@example.com', phone: '555-0203', role: 'Faculty', image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH004', name: 'Prof. Michael Johnson', subject: 'History', email: 'm.johnson@example.com', phone: '555-0204', role: 'Head of Dept', image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH005', name: 'Mrs. Jessica Brown', subject: 'Computer Science', email: 'j.brown@example.com', phone: '555-0205', role: 'Faculty', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH006', name: 'Mr. Christopher Williams', subject: 'Physical Ed', email: 'c.williams@example.com', phone: '555-0206', role: 'Coach', image: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH007', name: 'Dr. Amanda Jones', subject: 'Science', email: 'a.jones@example.com', phone: '555-0207', role: 'Faculty', image: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH008', name: 'Mr. Robert Davis', subject: 'Mathematics', email: 'r.davis@example.com', phone: '555-0208', role: 'Faculty', image: 'https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH009', name: 'Ms. Jennifer Miller', subject: 'Literature', email: 'j.miller@example.com', phone: '555-0209', role: 'Faculty', image: 'https://images.unsplash.com/photo-1573497019236-17f8177b81e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH010', name: 'Mr. James Wilson', subject: 'History', email: 'j.wilson@example.com', phone: '555-0210', role: 'Faculty', image: 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH011', name: 'Mrs. Linda Taylor', subject: 'Computer Science', email: 'l.taylor@example.com', phone: '555-0211', role: 'Faculty', image: 'https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' },
+        { id: 'TCH012', name: 'Mr. Richard Anderson', subject: 'Physical Ed', email: 'r.anderson@example.com', phone: '555-0212', role: 'Coach', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80' }
       ]);
       setLoading(false);
     }, 600);
@@ -101,9 +101,15 @@ export default function Teachers() {
                <MoreHorizontal className="w-5 h-5" />
             </div>
             
-            <div className="h-24 w-24 bg-gradient-to-br from-brand-100 to-indigo-100 text-brand-600 rounded-[2rem] flex items-center justify-center text-4xl font-black mb-5 shadow-inner ring-4 ring-slate-50 group-hover:-translate-y-1 transition-transform duration-300">
-              {teacher.name.charAt(0)}
-            </div>
+            {teacher.image ? (
+              <div className="h-24 w-24 rounded-[2rem] overflow-hidden mb-5 shadow-inner ring-4 ring-slate-50 group-hover:-translate-y-1 transition-transform duration-300">
+                <img src={teacher.image} alt={teacher.name} className="h-full w-full object-cover" />
+              </div>
+            ) : (
+              <div className="h-24 w-24 bg-gradient-to-br from-brand-100 to-indigo-100 text-brand-600 rounded-[2rem] flex items-center justify-center text-4xl font-black mb-5 shadow-inner ring-4 ring-slate-50 group-hover:-translate-y-1 transition-transform duration-300">
+                {teacher.name.charAt(0)}
+              </div>
+            )}
             
             <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-brand-600 transition-colors cursor-pointer text-center">{teacher.name}</h3>
             <span className="mt-2 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold leading-5 bg-brand-50 text-brand-700 border border-brand-100/50">

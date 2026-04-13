@@ -140,7 +140,7 @@ export default function Students() {
         </div>
 
         <div className="overflow-x-auto min-h-[400px] custom-scrollbar pb-2">
-          <table className="w-full min-w-[900px] divide-y divide-slate-100 table-fixed">
+          <table className="w-full min-w-[900px] divide-y divide-slate-100">
             <thead className="bg-slate-50/80">
               <tr>
                 <th scope="col" className="px-6 py-4 text-left w-10"><input type="checkbox" onChange={toggleSelectAll} className="rounded border-slate-300 text-brand-600 cursor-pointer w-4 h-4 focus:ring-brand-500" /></th>
